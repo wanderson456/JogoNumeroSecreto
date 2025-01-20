@@ -58,7 +58,7 @@ function verificarChute(){
     let chute= document.querySelector('input').value;
     if(chute == numeroSecreto){
         exibirTextoTela('h1','Acertou!');
-        let palavraTentativa = tentativas > 1 ? 'tentativas':'tentativa';
+        let palavraTentativa = tentativas > 1 ? 'tentativas!':'tentativa!';
         let mensageTentativas = `Você descobriu o numero secreto com ${tentativas} ${palavraTentativa}`;
         exibirTextoTela('p',mensageTentativas);
         document.getElementById('reiniciar').removeAttribute('disabled');
